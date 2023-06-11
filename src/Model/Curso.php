@@ -28,7 +28,6 @@ class Curso implements IPontuavel
         if ($video->minutosDeDuracao() < 3) {
             throw new \DomainException('Video muito curto');
         }
-
         $this->videos[] = $video;
     }
 
@@ -41,5 +40,12 @@ class Curso implements IPontuavel
     public function recuperarPontuacao(): int
     {
         return 100;
+    }
+    
+    public function assistir(): void
+    {
+        foreach ($this->recuperarVideos() as $video) {
+            $video->assistir();
+        }
     }
 }
