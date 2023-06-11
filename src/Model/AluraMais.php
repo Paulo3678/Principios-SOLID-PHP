@@ -2,9 +2,10 @@
 
 namespace Alura\Solid\Model;
 
+use Model\IAssistivel;
 use Model\IPontuavel;
 
-class AluraMais extends Video implements IPontuavel
+class AluraMais extends Video implements IPontuavel, IAssistivel
 {
 
     /**

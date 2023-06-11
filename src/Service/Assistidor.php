@@ -2,7 +2,7 @@
 
 namespace Alura\Solid\Service;
 
-use Model\IPontuavel;
+use Model\IAssistivel;
 
 class Assistidor
 {
@@ -14,9 +14,8 @@ class Assistidor
      * Abstrações não devem depender de implementações. Implementações devem depender de abstrações
      * Classes concretas, devem depender de interfaces e classes abstratas, mas classes abstratas e interfaces 
        não devem depender de classes concretas
-     *  
      */
-    public function assistir(IPontuavel $conteudo)
+    public function assistir(IAssistivel $conteudo)
     {
         $conteudo->assistir();
     }

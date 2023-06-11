@@ -3,9 +3,10 @@
 namespace Alura\Solid\Model;
 
 use Model\Feedback;
+use Model\IAssistivel;
 use Model\IPontuavel;
 
-class Curso implements IPontuavel
+class Curso implements IPontuavel, IAssistivel
 {
     private $nome;
     private $videos;
